@@ -1,10 +1,10 @@
-import React from 'react';
-import { icon1, icon2, icon3, icon4, icon5, icon6 } from '../assets/index';
+import React from "react";
+import { icon1, icon2, icon3, icon4, icon5, icon6 } from "../assets/index";
 
-import { motion } from 'framer-motion';
-import style from '../style';
-import { TypingText } from './TypingText';
-import { staggerContainer } from '../utils/motion';
+import { motion } from "framer-motion";
+import style from "../style";
+import { TypingText } from "./TypingText";
+import { staggerContainer } from "../utils/motion";
 
 const container = {
   show: {
@@ -18,12 +18,12 @@ const hoverEffect = {
   whileHover: {
     scale: 1.1,
     rotate: 360,
-    borderRadius: '100%',
+    borderRadius: "100%",
   },
   whileTap: {
     scale: 0.8,
     rotate: 360,
-    borderRadius: '100%',
+    borderRadius: "100%",
   },
 };
 
@@ -33,7 +33,7 @@ const item = {
     opacity: 1,
     y: 0,
     transition: {
-      ease: 'easeInOut',
+      ease: "easeInOut",
       duration: 0.2,
     },
   },
@@ -44,16 +44,19 @@ const Services = () => {
     <section id="services" className="bg-white pt-11">
       <motion.div className="container px-6 py-10 mx-auto">
         <motion.div
-          variants={staggerContainer}
+          /*  variants={staggerContainer} */
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
           className={`${style.innerWidth} mx-auto flex flex-col`}
         >
-          <TypingText
-            textStyles="flex text-2xl justify-center font-bold text-[35px] text-black  lg:text-3xl"
-            title="|Our Services."
-          ></TypingText>
+          <div className="flex text-2xl justify-center font-bold text-[35px] text-black  lg:text-3xl">
+          |Our Services.
+          </div>
+         {/*  <TypingText
+            textStyles=""
+            title=
+          ></TypingText> */}
         </motion.div>
 
         <p className="mt-4 text-lg lg:text-[20px] text-[#2196F3] leading-[30px] lg:leading-[40px] font-normal lg:px-7 px-2 text-center">
@@ -64,18 +67,14 @@ const Services = () => {
         </p>
 
         <p className="text-lg sm:text-xl pt-4 text-[#000] font-normal text-center">
-          Choose us to stay ahead in{' '}
+          Choose us to stay ahead in{" "}
           <span className="before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-blue-800 relative inline-block">
             <span className="relative text-white">the digital world.</span>
           </span>
         </p>
 
-        <motion.div
-          variants={container}
-          initial="hidden"
-          exit="exit"
-          whileInView="show"
-          viewport={{ once: false }}
+        <div
+         
           className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-16 md:grid-cols-2 xl:grid-cols-3"
         >
           <motion.div
@@ -333,7 +332,7 @@ const Services = () => {
               </svg>
             </a>
           </motion.div>
-        </motion.div>
+        </div>
 
         {/* Transformation digital service */}
         <div className="flex justify-center items-center py-5">

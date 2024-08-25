@@ -1,9 +1,9 @@
-import React from 'react';
-import logo from '../assets/logo.png';
-import logoWhite from '../assets/logoWhite.png';
-import { Calendly } from './index';
+import React from "react";
+import logo from "../assets/logo.png";
+import logoWhite from "../assets/logoWhite.png";
+import { Calendly } from "./index";
 
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => (
   <section>
@@ -11,7 +11,7 @@ const Footer = () => (
       <div className="container px-6 mx-auto">
         <div className="md:flex md:-mx-3 md:items-center md:justify-between">
           <h1 className="text-xl pt-8 font-thin tracking-tight s md:mx-3 xl:text-2xl text-white">
-            Book your free consultation and boost your strategy !{' '}
+            Book your free consultation and boost your strategy !{" "}
             <span className="text-[#24B1E7] font-extrabold">NOW</span>
           </h1>
 
@@ -155,14 +155,14 @@ const Footer = () => (
                 href="#"
                 className="text-white transition-colors duration-300  dark:hover:text-[#24B1E7] hover:underline hover:text-[#24B1E7]"
               >
-                +212 763-5032-75 <br />
-                +212 537-3798-44
+                +212 778-5487-59 <br />
+                +212 535-4635-64
               </a>
               <a
                 href="#"
                 className="text-white transition-colors duration-300  dark:hover:text-[#24B1E7] hover:underline hover:text-[#24B1E7]"
               >
-                Contact@digitakalagency.com
+                Contact@agency.com
               </a>
             </div>
           </div>
@@ -180,19 +180,19 @@ const Footer = () => (
           </a>
 
           <p className="text-sm text-white sm:mt-2 my-3">
-            © Copyright 2023. All Rights Reserved.
+            © 2023 GB-Digital. All Rights Reserved. Made by GB-Digital.
           </p>
 
           <div className="flex flex-row md:mt-0 justify-center mb-2 gap-4">
             <a href="https://www.instagram.com/thedigitakal/">
-              <FaInstagram size={30} style={{ color: 'white' }} />
+              <FaInstagram size={30} style={{ color: "white" }} />
             </a>
 
             <a href="https://www.linkedin.com/company/digitakal-agency/">
-              <FaLinkedin size={30} style={{ color: 'white' }} />
+              <FaLinkedin size={30} style={{ color: "white" }} />
             </a>
             <a href="https://www.linkedin.com/company/digitakal-agency/">
-              <FaFacebook size={30} style={{ color: 'white' }} />
+              <FaFacebook size={30} style={{ color: "white" }} />
             </a>
           </div>
         </div>

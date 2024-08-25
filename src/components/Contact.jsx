@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { sales, Phone, joinUs, address } from '../assets';
+import React, { useState, useEffect, useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { sales, Phone, joinUs, address } from "../assets";
 
 const Contact = () => {
-  const values = { message: '', email: '', user_name: '' };
+  const values = { message: "", email: "", user_name: "" };
 
   const [formValues, setFormValues] = useState(values);
   const [formErrors, setFormErrors] = useState({});
@@ -38,10 +38,10 @@ const Contact = () => {
   const sendForm = () => {
     emailjs
       .sendForm(
-        'service_gqzpf0s',
-        'template_d09tb6e',
+        "service_gqzpf0s",
+        "template_d09tb6e",
         form.current,
-        'Wq3pWVlP4xteVcRzG'
+        "Wq3pWVlP4xteVcRzG"
       )
       .then(
         (result) => {
@@ -56,19 +56,19 @@ const Contact = () => {
   const validateForm = (values) => {
     let errors = {};
     if (!values.user_name || values.user_name.length < 3) {
-      errors.user_name = 'required';
+      errors.user_name = "required";
     }
     if (!values.email) {
-      errors.email = 'required';
+      errors.email = "required";
     } else if (!/\S+@\S+\.\S+/.test(values.email)) {
-      errors.email = 'required';
+      errors.email = "required";
     }
     if (
       !values.message ||
       values.message.length < 15 ||
       values.message.length > 500
     ) {
-      errors.message = 'required';
+      errors.message = "required";
     }
     return errors;
   };
@@ -85,15 +85,15 @@ const Contact = () => {
         className="relative overflow-hidden bg-no-repeat bg-cover rounded-md"
         style={{
           backgroundImage: 'url("/contactSection.webp")',
-          height: '220px',
+          height: "220px",
 
-          backgroundPosition: '50% 21%',
+          backgroundPosition: "50% 21%",
         }}
       >
         <h1 className="flex text-2xl justify-center font-bold text-[35px] text-white capitalize sm:px-16 py-10 lg:text-3xl">
           Let's&nbsp;
           <span class="before:block before:absolute before:-inset-0 before:-skew-y-3 before:bg-white relative inline-block">
-            <span class="relative text-[#333A8E]">{''}Talk ? </span>
+            <span class="relative text-[#333A8E]">{""}Talk ? </span>
           </span>
         </h1>
       </div>
@@ -102,9 +102,9 @@ const Contact = () => {
         <div
           className="block rounded-lg shadow-lg py-10 md:py-12 px-2 md:px-6"
           style={{
-            marginTop: '-100px',
-            background: 'hsla(0, 0%, 100%, 0.8)',
-            backdropFilter: 'blur(30px)',
+            marginTop: "-100px",
+            background: "hsla(0, 0%, 100%, 0.8)",
+            backdropFilter: "blur(30px)",
           }}
         >
           <div className="flex flex-wrap">
@@ -202,7 +202,7 @@ const Contact = () => {
                       </circle>
                     </svg>
                   ) : (
-                    'Send'
+                    "Send"
                   )}
                 </button>
               </form>
@@ -224,8 +224,7 @@ const Contact = () => {
                     <div className="grow ml-6">
                       <p className="font-bold mb-1">Address</p>
                       <p className="text-gray-500 text-[12px]">
-                        Imm B, Bureau 12, Digitakal Agency, RCE Firdaous, Rue
-                        Mohamed Abdou، Kenitra
+                        18 Av. digita Agency, Casablanca 20100
                       </p>
                     </div>
                   </div>
@@ -240,9 +239,9 @@ const Contact = () => {
                     <div className="grow ml-6">
                       <p className="font-bold mb-1">Sales questions</p>
                       <p className="text-gray-500 text-[15px]">
-                        digitakalagency@gmail.com
+                        sales.agency@gmail.com
                       </p>
-                      <p className="text-gray-500">+212 537-3798-44</p>
+                      <p className="text-gray-500">+212 535-4635-64</p>
                     </div>
                   </div>
                 </div>
@@ -255,8 +254,8 @@ const Contact = () => {
                     </div>
                     <div className="grow ml-6">
                       <p className="font-bold mb-1">Phone</p>
-                      <p className="text-gray-500">+212 763-5032-75</p>
-                      <p className="text-gray-500">+212 537-3798-44</p>
+                      <p className="text-gray-500">+212 778-5487-59</p>
+                      <p className="text-gray-500">+212 535-4635-64</p>
                     </div>
                   </div>
                 </div>
@@ -269,8 +268,8 @@ const Contact = () => {
                     </div>
                     <div className="grow ml-6">
                       <p className="font-bold mb-1">Join Us</p>
-                      <p className="text-gray-500">Join@digitakalagency.com</p>
-                      <p className="text-gray-500">+212 763-5032-75</p>
+                      <p className="text-gray-500">Join@agency.com</p>
+                      <p className="text-gray-500">+212 535-4635-64</p>
                     </div>
                   </div>
                 </div>

@@ -42,10 +42,14 @@ const About = () => (
         viewport={{ once: false, amount: 0.25 }}
         className={`${style.innerWidth} mx-auto flex flex-col`}
       >
-        <TypingText
-          textStyles="font-bold text-[35px] text-black "
-          title="|About Digitakal."
-        ></TypingText>
+           <div className="font-bold text-[35px] text-black ">
+          |About Digitakal.
+          </div>
+
+      {/*   <TypingText
+          textStyles="
+          title=""
+        ></TypingText> */}
       </motion.div>
 
       <p className="font-medium text-lg sm:text-2xl lg:text-3xl text-black my-5">

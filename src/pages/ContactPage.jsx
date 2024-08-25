@@ -129,8 +129,7 @@ const ContactPage = ({ pageTitle }) => {
                           Our Location
                         </h4>
                         <p className="text-body-color text-base">
-                          Imm B, Bureau 12, Digitakal Agency, RCE Firdaous, Rue
-                          Mohamed Abdou، Kenitra
+                        18 Av. digita Agency, Casablanca 20100
                         </p>
                       </div>
                     </div>
@@ -143,7 +142,7 @@ const ContactPage = ({ pageTitle }) => {
                           Phone Number
                         </h4>
                         <p className="text-body-color text-base">
-                          +212 123456789
+                         +212 778-5487-59
                         </p>
                       </div>
                     </div>
@@ -156,7 +155,7 @@ const ContactPage = ({ pageTitle }) => {
                           Email Address
                         </h4>
                         <p className="text-body-color text-base">
-                          info@digitakal.com
+                          info@agency.com
                         </p>
                       </div>
                     </div>
